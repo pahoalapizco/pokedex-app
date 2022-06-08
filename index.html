@@ -15,7 +15,46 @@
     <title>Pokedex - App</title>
   </head>
   <body>
-    
+    <main id="pokedex" class="pokedex-container">
+      <section id="pokemon-detail" class="pokemon-card">
+        <div class="card-background"></div>
+        
+        <article class="pokemon-card--body">
+          <img class="pokemon-image" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="Bulbasaur">
+          
+          <h2 class="pokemon-name">
+            Bulbasor
+            <span> 45hp </span>
+          </h2>
+          <p class="card-body--text"> 64 exp</p>
+          <p class="pokemon-types">
+            <span>
+              Grass
+            </span>
+          </p>
+        </article>
+
+        <article class="pokemon-card--footer">
+          <div class="card-fotter--stats">
+            <h4> 49k </h4>
+            <span> Ataque </span>
+          </div>
+          <div class="card-fotter--stats">
+            <h4> 49k </h4>
+            <span> Ataque Especial </span>
+          </div>
+          <div class="card-fotter--stats">
+            <h4> 49k </h4>
+            <span> Defensa </span>
+          </div>
+        </article>
+      </section>
+
+      <section class="button-container">
+        <button id="btnLeft" class="arrow-button"> Izq </button>
+        <button id="btnRight" class="arrow-button"> Der </button>
+      </section>
+    </main>
     <script src="./js/index.js"></script>
   </body>
 </html>
