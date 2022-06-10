@@ -1,0 +1,107 @@
+:root {
+  --secundary-color: #d3cece;
+  --just-white: #fff;
+  --font-color: #b186ff;
+  --background-color: #292b31;
+
+  /*Colors by type*/
+  --normal-type: #aaaa99;
+  --fighting-type: #bb5544;
+  --flying-type: #8899ff;
+  --poison-type: #a59;
+  --ground-type: #db5;
+  --rock-type: #ba6;
+  --bug-type: #ab2;
+  --ghost-type: #66b;
+  --steel-type: #aab;
+  --fire-type: #f42;
+  --water-type: #39f;
+  --grass-type: #7c5;
+  --electric-type: #fc3;
+  --psychic-type: #f59;
+  --ice-type: #6cf;
+  --dragon-type: #76e;
+  --dark-type: #754;
+  --fairy-type:#e9e ;
+  --unknown-type: #fff;
+  --shadow-type: #fff ;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body { 
+  font-size: 1.6rem;
+  font-family: 'Dosis', sans-serif;
+  background-color: var(--background-color);
+  color: var(--just-white);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+header {
+  width: 100%;
+  height: 10vh;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  /* position: fixed; */
+}
+
+/* Main */
+.pokedex-container{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+/* Search section */
+.search-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-form input{
+  width: 100%;
+  max-width: 240px;
+  height: 36px;
+  padding-left: 10px;
+  border: none;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.search-form button {
+  width: 48px;
+  height: 36px;
+  border: none;
+  background-color: var(--font-color);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.inactive {
+  display: none;
+}
+
