@@ -1,6 +1,28 @@
 :root {
-  --main-font-color: #b186ff;
   --secundary-color: #d3cece;
+  --just-white: #fff;
+
+  /*Colors by type*/
+  --normal-type: #aaaa99;
+  --fighting-type: #bb5544;
+  --flying-type: #8899ff;
+  --poison-type: #a59;
+  --ground-type: #db5;
+  --rock-type: #ba6;
+  --bug-type: #ab2;
+  --ghost-type: #66b;
+  --steel-type: #aab;
+  --fire-type: #f42;
+  --water-type: #39f;
+  --grass-type: #7c5;
+  --electric-type: #fc3;
+  --psychic-type: #f59;
+  --ice-type: #6cf;
+  --dragon-type: #76e;
+  --dark-type: #754;
+  --fairy-type:#e9e ;
+  --unknown-type: #fff;
+  --shadow-type: #fff ;
 }
 * {
   margin: 0;
@@ -37,7 +59,7 @@ button:hover {
   max-width: 420px;
   height: auto;
   border-radius: 16px;
-  background-color: white;
+  background-color: var(--just-white);
   overflow: hidden;
   box-shadow: 2px 2px 4px rgb(0 0 0 / 70%);
 }
@@ -55,16 +77,13 @@ button:hover {
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid var(--secundary-color);
-  background-color: white;
+  background-color: var(--just-white);
 }
 .pokemon-card--body img {
   width: 200px;
   height: 200px;
   margin-top: calc(-100px - 5px);
   margin-bottom: 20px;
-  /* border: 5px solid white;
-  border-radius: 50%;
-  background-color: white; */
 }
 
 .pokemon-name span,
@@ -75,7 +94,7 @@ button:hover {
 }
 
 .card-body--text {
-  margin: 15px 0;;
+  margin: 15px 0;
 }
 
 .pokemon-types {
@@ -90,17 +109,18 @@ button:hover {
   margin-right: 5px;
   margin-bottom: 5px;
   padding: 2px 10px;
-  border: 1px solid  var(--secundary-color);
+  border: 1px solid  transparent;
   border-radius: 10px;
   text-align: center;
   font-weight: bold;
+  color: var(--just-white);
 }
 
 /* Card Footer */
 .pokemon-card--footer {
   display: flex;
   justify-content: space-around;
-  background-color: white;
+  background-color: var(--just-white);
 }
 .pokemon-card--footer h4 {
   margin-bottom: 10px;

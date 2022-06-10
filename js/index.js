@@ -11,10 +11,11 @@ const reload = (pokemon) => {
     <span> ${pokemon.hp}hp</span>
   `;
   pokemonExpElement.textContent = `${pokemon.experience} exp`;
-
+  cardBackGroundDiv.style.backgroundColor = `var(--${pokemon.types[0].type.name}-type)`;
   const types = pokemon.types.map(({ type }) => {
     const spanType = document.createElement("span");
     spanType.innerText = type.name;
+    spanType.style.backgroundColor = `var(--${type.name}-type)`;
     return spanType;
   });
   pokemonTypesElement.innerHTML = "";
