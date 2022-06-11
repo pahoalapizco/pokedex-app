@@ -1,7 +1,7 @@
 // window.addEventListener('DOMContentLoaded', getPokemon, false);
 const MIN_POKEMON_ID = 1;
 const MAX_POKEMON_ID = 150;
-let currentPokemonId =0;
+let currentRandomPokemonId =0;
 
 const reload = (pokemon) => {
   imgElement.src = pokemon.img;
