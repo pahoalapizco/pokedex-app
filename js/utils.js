@@ -43,3 +43,4 @@ const btnContainerDetail = document.getElementById("button-container-detail");
 const btnLeftDetail = document.getElementById("btnLeft");
 const btnRightDetail = document.getElementById("btnRight");
 const cardBackGroundDetail = document.querySelector(".card-background");
+const btnBackDetail = document.getElementById("btnBack");

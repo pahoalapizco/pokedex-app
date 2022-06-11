@@ -15,6 +15,11 @@ btnRightDetail.addEventListener("click", () => {
   return;
 });
 
+btnBackDetail.addEventListener("click", () => {  
+  inputSearch.value = "";
+  location.hash = "";
+});
+
 window.addEventListener("DOMContentLoaded", navigator, true);
 window.addEventListener("hashchange", navigator, true);
 
