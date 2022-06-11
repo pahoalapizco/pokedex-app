@@ -62,8 +62,7 @@ header {
 
 /* Main */
 .pokedex-container{
-  width: 100%;
-  /* height: 78vh; */
+  width: 100%;height: 78vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,7 +71,7 @@ header {
   scroll-snap-type: y proximity;
 }
 
-main::-webkit-scrollbar {
+main::-webkit-scrollbar{
   width: 0px;
 }
 
@@ -95,6 +94,7 @@ main::-webkit-scrollbar-thumb{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .search-form input{
   width: 100%;
@@ -159,10 +159,6 @@ main::-webkit-scrollbar-thumb{
   color: var(--secundary-color);
 }
 
-.pokemon-name span::before {
-  content: "#";
-}
-
 .pokemon-types {
   margin-bottom: 20px;
   padding: 0 20px;
@@ -204,3 +200,80 @@ footer {
   display: none;
 }
 
+/* card */
+.pokemon-card {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 16px;
+  background-color: var(--just-white);
+  overflow: hidden;
+  box-shadow: 2px 2px 4px rgb(0 0 0 / 70%);
+  color: black
+}
+
+.card-background {
+  width: 100%;
+  height: 200px;
+  display: block;
+  background-color: rgb(66, 187, 103);
+}
+
+.pokemon-card--body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--secundary-color);
+  background-color: var(--just-white);
+}
+.pokemon-card--body img {
+  width: 200px;
+  height: 200px;
+  margin-top: calc(-100px - 5px);
+  margin-bottom: 20px;
+}
+
+.pokemon-name span,
+.card-body--text  {
+  font-weight: normal;
+  font-size: 1.6rem;
+  color: var(--secundary-color);
+}
+
+.card-body--text {
+  margin: 15px 0;
+}
+
+/* Card Footer */
+.pokemon-card--footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--just-white);
+}
+.pokemon-card--footer h4 {
+  margin-bottom: 10px;
+}
+
+.card-fotter--stats {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 1.2rem;
+}
+/* Buttons */
+.button-container {
+  width: 320px;
+  position: absolute;
+  top: calc(420px/2);
+  display: flex;
+  justify-content: space-between;
+}
+.arrow-button {
+  background: transparent;
+  border: none;
+}
+
+.arrow-button span {
+  margin: 0 15px;
+  font-size: 2rem;
+}

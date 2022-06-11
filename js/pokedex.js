@@ -33,7 +33,7 @@ const setPokemonPreviewCard = async (apiUrl) => {
   nameH3.classList.add("pokemon-name");
   nameH3.innerText = pokemonData.name;
   const spanId = document.createElement("span");
-  spanId.innerText = padLeft(pokemonData.id);
+  spanId.innerText = `#${padLeft(pokemonData.id)}`;
   nameH3.appendChild(spanId);
 
   article.appendChild(nameH3);

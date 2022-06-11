@@ -24,9 +24,9 @@
       <h1>Pokedex - app</h1>
       <section id="searchContainer" class="search-container">
         <form class="search-form" action="">
-          <input type="text" name="" id="searchInput" placeholder="Buscar por nombre o n&uacute;mero">
+          <input type="text" name="" id="searchInput" placeholder="Buscar por nombre o n&uacute;mero" autocomplete="off">
           <button id="searchButton" class="search-button"> 🔍 </button>
-          <button class="generic-button" onclick="loadMore()"> Ver m&aacute;s...</button>
+          <button class="generic-button inactive" onclick="loadMore()"> Ver m&aacute;s...</button>
         </form>
 
       </section>
@@ -45,10 +45,53 @@
             <span style="background-color: var(--grass-type);"> Grass </span>
             <span style="background-color: var(--grass-type);"> Grass </span>
             <span style="background-color: var(--grass-type);"> Grass </span>
-          </p>
-        </article> -->
-        
+          </p> -->
+        </article>
       </section>
+
+      <!-- Pokemon-card -->
+      <section id="pokemon-detail" class="pokemon-card inactive">
+        <div class="card-background"></div>
+        
+        <article class="pokemon-card--body">
+          <!-- <img class="pokemon-image" id="pokemon-img" src="" alt=""> -->
+          <img class="pokemon-card-image" id="pokemon-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="Bulbasaur">
+          
+          <h2 class="pokemon-name" id="pokemon-name">
+            Bulbasor
+            <span> 45hp </span>
+          </h2>
+          <p class="card-body--text" id="pokemon-exp"> </p>
+          <p class="pokemon-types" id="pokemon-types">
+            <span style="background-color: var(--grass-type);"> Grass </span>
+          </p>
+        </article>
+
+        <article class="pokemon-card--footer">
+          <div class="card-fotter--stats">
+            <h4> 49k </h4>
+            <span> Ataque </span>
+          </div>
+          <div class="card-fotter--stats">
+            <h4> 49k </h4>
+            <span> Ataque Especial </span>
+          </div>
+          <div class="card-fotter--stats">
+            <h4> 49k </h4>
+            <span> Defensa </span>
+          </div>
+        </article>
+      </section>
+
+      <section class="button-container inactive">
+        <button id="btnLeft" class="arrow-button inactive" onclick="onClickPrev()"> 
+          <span> <i class="fa-solid fa-arrow-left"></i> </span>  
+        </button>
+        <button id="btnRight" class="arrow-button inactive" onclick="onClicknext()">
+          <span><i class="fa-solid fa-arrow-right"></i></span>
+        </button>
+      </section>
+
     </main>
     <footer>
       <p>Made with &#128156; by Pahoalapizco</p>
