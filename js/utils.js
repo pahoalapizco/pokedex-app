@@ -17,3 +17,7 @@ const pokemonExpElement = document.getElementById("pokemon-exp");
 const pokemonTypesElement = document.getElementById("pokemon-types");
 const statContainer = document.querySelectorAll(".card-fotter--stats h4");
 const cardBackGroundDiv = document.querySelector(".card-background");
+
+
+/* HTML Elements - pokedex.html */
+const pokemonListPreviewSect = document.getElementById("pokemonListPreview");
