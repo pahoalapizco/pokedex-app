@@ -10,6 +10,10 @@ function random(min, max) {
   return Math.floor((Math.random() * (max - min + 1)) + min);
 }
 
+function padLeft(numeber) {
+  return ('00'+numeber).slice(-3);
+}
+
 /* HTML Elements */
 const imgElement = document.getElementById("pokemon-img");
 const pokemonNameH2Element = document.getElementById("pokemon-name");

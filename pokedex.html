@@ -22,58 +22,32 @@
   <body>
     <header>
       <h1>Pokedex - app</h1>
-    </header>
-    <!-- Pokedex with cards -->
-    <main id="pokedex" class="pokedex-container">
       <section id="searchContainer" class="search-container">
         <form class="search-form" action="">
           <input type="text" name="" id="searchInput" placeholder="Buscar por nombre o n&uacute;mero">
-          <button id="searchButton"> 🔍 </button>
+          <button id="searchButton" class="search-button"> 🔍 </button>
+          <button class="generic-button" onclick="loadMore()"> Ver m&aacute;s...</button>
         </form>
+
       </section>
+    </header>
+    <!-- Pokedex with cards -->
+    <main id="pokedex" class="pokedex-container">
+      
 
       <section id="pokemonListPreview" class="pokemon-container">
-        <article class="pokemon-img-container">
+        <!-- Layout -->
+        <!-- <article class="pokemon-img-container">
           <h3 class="pokemon-name"> Bulbasaur <span># 001</span> </h3>          
           <img class="pokemon-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="" srcset="">
 
-          <p class="pokemon-types" id="pokemon-types">
+          <p class="pokemon-types" >
             <span style="background-color: var(--grass-type);"> Grass </span>
             <span style="background-color: var(--grass-type);"> Grass </span>
             <span style="background-color: var(--grass-type);"> Grass </span>
           </p>
-        </article>
-        <article class="pokemon-img-container">
-          <h3 class="pokemon-name"> Bulbasaur <span># 001</span> </h3>          
-          <img class="pokemon-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="" srcset="">
-
-          <p class="pokemon-types" id="pokemon-types">
-            <span style="background-color: var(--grass-type);"> Grass </span>
-            <span style="background-color: var(--grass-type);"> Grass </span>
-            <span style="background-color: var(--grass-type);"> Grass </span>
-          </p>
-        </article>
-        <article class="pokemon-img-container">
-          <h3 class="pokemon-name"> Bulbasaur <span># 001</span> </h3>          
-          <img class="pokemon-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="" srcset="">
-
-          <p class="pokemon-types" id="pokemon-types">
-            <span style="background-color: var(--grass-type);"> Grass </span>
-            <span style="background-color: var(--grass-type);"> Grass </span>
-            <span style="background-color: var(--grass-type);"> Grass </span>
-          </p>
-        </article>
-        <article class="pokemon-img-container">
-          <h3 class="pokemon-name"> Bulbasaur <span># 001</span> </h3>          
-          <img class="pokemon-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="" srcset="">
-
-          <p class="pokemon-types" id="pokemon-types">
-            <span style="background-color: var(--grass-type);"> Grass </span>
-            <span style="background-color: var(--grass-type);"> Grass </span>
-            <span style="background-color: var(--grass-type);"> Grass </span>
-          </p>
-        </article>
-        <button class="generic-button"> Ver m&aacute;s...</button>
+        </article> -->
+        
       </section>
     </main>
     
